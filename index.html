@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News</title>
+    <link rel="shortcut icon" href="https://www.globaltimes.cn/images/logo.gif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo"><img src="https://upload.wikimedia.org/wikipedia/de/thumb/9/94/Global-Times-Logo.svg/1200px-Global-Times-Logo.svg.png" alt="Logo"></a>
+            <div class="nav-link"><ul class="flex">
+                <li class="hover-link nav-items" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                <li class="hover-link nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="hover-link nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="hover-link nav-items"><a href="https://www.linkedin.com/in/contact-bikash/" target="-main">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search-bar flex"></div>
+        <input id="search-text"type="text" class="news-input" placeholder="E.g: Science">
+        <button id="search-button" class="search-button">Search</button>
+        </div>
+    </nav>
+    <main>
+        <div class="card-container container flex" id="cards-container">
+            </div>        
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="News address" id="News-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End gadget 25/01/2020</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, blanditiis sed, tempore quo, suscipit excepturi quis exercitationem iure aliquam explicabo aperiam numquam fugiat rerum porro animi libero assumenda illum modi!</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
